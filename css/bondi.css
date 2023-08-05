@@ -1,0 +1,195 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,400;0,500;0,700;1,100;1,300&display=swap');
+:root{
+    --dark-color:#192837;
+    --green-color:#33d1cc;
+    --section-color:#eff7fa;
+    --yellow-color:#ffc400;
+
+
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+.navbar{
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover
+{
+    color: var(--green-color);
+}
+
+.navbar .search{
+    border-left: 1px solid var(--green-color);
+    color: var(--green-color);
+    cursor: pointer;
+}
+.navbar-toggler{
+    color:#fff
+}   
+.navbar-toggler[aria-expanded="true"]{
+    border-color: var(--green-color);
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 60px );
+}
+.mainbtn{
+    color: var(--yellow-color);
+    border-color: var(--green-color);
+}
+
+.mainbtn:hover{
+    background-color: var(--green-color);
+    color: #fff
+}
+
+.main-title::after{
+    content: '';
+    background-color: var(--green-color);
+    width: 180px;
+    height: 2px;
+    position: absolute;
+    transform: translate(-50%);
+}
+.feature-title{
+    color: var(--yellow-color);
+}
+
+ 
+.feature .icon-holder{
+    height: 200px;
+}
+.feature .icon-holder i{
+    /* left: 50%; */
+    transform: translateX(-50%);
+}
+.feature .icon-holder .number{
+    font-size: 12rem;
+color: var(--section-color);
+}
+.feature .icon-holder .icon{
+    font-size:5rem;
+color: var(--green-color);
+}
+.ourWork{
+    background-color: var(--section-color);
+}
+.ourWork ul li {
+    border-radius: 5px;
+    margin-left:.5rem ;
+    padding: .5rem .5rem;
+    cursor: pointer;
+    color:var(--yellow-color);
+    border: 1px solid var(--green-color);
+    
+}
+
+.ourWork ul li.active{
+    background-color: var(--green-color);
+    color:var(--yellow-color);
+
+}
+.ourWork ul li:hover{
+    color:#fff;
+    background-color: var(--green-color);
+    cursor: pointer;
+}
+.ourWork .box{
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.ourWork .box::before{
+content: attr(data-work);
+position: absolute;
+background-color: rgb(51 209 204 / 76%);
+width: calc(100% - 10px);
+height: calc(100% - 10px);
+display: flex;
+justify-content: center;
+align-items: center;
+color: var(--yellow-color);
+transition: 0.3s;
+font-size: 1.5rem;
+transform: translateX(calc(-100% - 5px));
+}
+.ourWork .box:hover::before{
+    transform: translateX(0);
+ 
+
+}
+
+
+.team{
+    background-color: var(--section-color);
+}
+
+.team h3{
+    color: var(--yellow-color);
+}
+.team h4{
+    background-color: var(--green-color);
+}
+.techs .project{
+    background-color: var(--dark-color);
+}
+
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe .email{
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+
+}
+.subscribe .email::placeholder{
+    color: #fff; 
+}
+.subscribe .subbtn{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+.subscribe .subbtn:hover{
+    color: var(--yellow-color);
+}
+.footer{
+    background-color: var(--dark-color);
+}
+.copyright  > span{
+    color: var(--green-color);
+}
+.copyright div > span{
+    color: var(--yellow-color);
+}
+.icon{
+    cursor: pointer;
+}
+.facebook{
+    color: #1877f2;
+}
+.linkedin{
+    color: #0077b5;
+}
+.twitter{
+    color: #1da1f2;
+}
+.youtube{
+    color: #ff0000;
+}
