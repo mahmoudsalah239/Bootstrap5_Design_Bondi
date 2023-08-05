@@ -1,2 +1,2 @@
 # Bootstrap5_Design_Bondi
-resposive ui project using html , css ,bootstrap
+resposive ui design using html , css ,bootstrap
